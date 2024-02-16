@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-first-app';
+   isRecipe:boolean=true;
+constructor(){
+
+}
+
+
+  eventFeautreSelected(feature:string){
+    console.log(feature)
+if(feature=='recipe'){
+  this.isRecipe=true;
+}else{
+this.isRecipe=false;
+}
+  }
 }
